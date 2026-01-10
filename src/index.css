@@ -1,0 +1,95 @@
+@import "tailwindcss";
+
+@theme {
+  --color-border: var(--border);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+
+  --color-card: var(--card);
+}
+
+@layer base{
+  :root{
+    --background: #478183;
+    --foreground: #F3F4F4;
+
+    --card: #233c3d;
+
+    --primary: #a8e22b;
+    --primary-foreground: #F3F4F4 ;
+
+    --border: #79678f;
+  }
+  .dark{
+    --background: #03202e;
+    --foreground: #F3F4F4;
+
+    --card: #233c3d;
+
+    --primary: #73c6c9;
+    --primary-foreground: #F3F4F4;
+
+    --border: #661345;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  html  {
+    @apply scroll-smooth;
+  }
+
+  body{
+    @apply bg-background text-foreground transition-colors duration-300;
+    font-feature-settings: "rlig" 1, "calt", 1;
+  }
+}
+
+@utility container{
+  margin-inline: auto;
+  padding-inline: 2rem;
+
+  @media(width >= 640px){
+    max-width:640px;
+  }
+    @media(width >= 768px){
+    max-width:768px;
+  }
+    @media(width >= 1024px){
+    max-width:1024px;
+  }
+    @media(width >= 1280px){
+    max-width:1280px;
+  }
+    @media(width >= 1400px){
+    max-width:1400px;
+  }
+}
+
+@utility card-hover{
+  @apply transition-transform duration-300 hover:scale-[1.02] hover:shadow-lg;
+}
+
+@utility gradient-border{
+  @apply relative rounded-md;
+  background: linear-gradient(to right, var(--card), var(--card));
+  background-clip: padding-box;
+  border: 1px solid transparent;
+} 
+
+@utility custom-button{
+  @apply px-6 py-2 rounded-full bg-primary/50 text-primary-foreground font-semibold
+  font-medium transition-all duration-300 hover:shadow-[0_0_10px_rgba(139,92,246,0.5)]
+  hover:scale-105 active:scale-95;
+}
+
+#root {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
