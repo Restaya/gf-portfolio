@@ -5,7 +5,7 @@ const projects = [
         id: 1,
         title: "Shadow detection and removal",
         description:"Implemented three shadow detection and removal algorithms, that only uses the image to work. It includes a GUI for easier use and displays how accurate the algorithm was.",
-        image: "public/projects/project1.png",
+        image: "/projects/project1.png",
         tags: ["Python", "Image Processing", "OpenCV", "NumPy"],
         githubUrl: "https://github.com/Restaya/shadow-detection-and-removal"
     },
@@ -13,7 +13,7 @@ const projects = [
         id: 2,
         title: "Star Invaders",
         description:"A Star Wars themed Space Invaders game made in Pygame, complete with UnitTesting and code formating checks.",
-        image: "public/projects/project2.png",
+        image: "/projects/project2.png",
         tags: ["Python", "Pygame", "UnitTest"],
         githubUrl: "https://github.com/Restaya/Python-Star-Invaders"
     },
@@ -21,7 +21,7 @@ const projects = [
         id: 3,
         title: "Sobics",
         description:"A flash game made in jQuery, take a block and throw it to a matching colored one to score!",
-        image: "public/projects/project3.png",
+        image: "/projects/project3.png",
         tags: ["Javascript", "jQuery", "HTML/CSS"],
         githubUrl: "https://github.com/Restaya/Sobics-JavaScript"
     },
