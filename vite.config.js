@@ -5,8 +5,8 @@ import path from "path"
 
 // https://vite.dev/config/
 export default defineConfig({
+   base: "/gf-portfolio/",
   plugins: [react(), tailwindcss()],
-  base: "/gf-portfolio/",
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
