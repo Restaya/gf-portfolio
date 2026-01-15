@@ -9,7 +9,7 @@ function App() {
     <>
       <BrowserRouter>
         <Routes>
-           <Route path="gf-portfolio" element={<Home/>}/>
+           <Route path="gf-portfolio" index element={<Home/>}/>
            <Route path="*" element={<NotFound/>}/>
         </Routes>
       </BrowserRouter>
