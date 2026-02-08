@@ -1,23 +1,22 @@
 
 const skills = [
     {name: "Python",  description:"Made a program that uses 3 algorithms to detect and remove shadows from images, also created a space invaders like game"},
-    {name: "MySQL", description:"Decent knowledge how to write queries"},
+    {name: "MySQL/MSSQL", description:"Learned how to write queries and stored procedures during my internship"},
 
     {name: "Javascript",  description:"Made a simple game in jQuery (Sobics project)"},
-    {name: "React", description:"Currently learning"},
+    {name: "React", description:"Currently learning, created this portfolio with it"},
     {name: "Java", description:"Basic language knowledge, working on a game project"},
     {name: "C++",  description:"Basic language knowledge"},
 
     {name: "Git/GitHub", description:"Basic knowledge how to use version control"},
     {name: "Docker", description:"Know the basics, currently learning more of it"},
     {name: "RestAPI", description:"Basic knowledge on how to extract data from an API"},
-    {name: "Data Analyst", description:"Know how to clean,visualize and analyze data"},
+    {name: "Data Analyst", description:"Know how to clean, visualize, transform and analyze data"},
 
 ];
 export const SkillsSection = () => {
     return (
         <section id="skills" className="py-24 px-4 relative bg-secondary/30">
-
             <div className="container mx-auto max-w-5xl ">
                 <h2 className ="text-3xl md:text-4xl font-bold mb-12 text-center">
                     My <span className="text-primary"> Skills</span>

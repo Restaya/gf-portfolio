@@ -19,7 +19,7 @@ export const HeroSection = () =>{
                         </span>
                     </h1>
                     <p className="text-lg md:text-xl text-muted-foreground max-2-xl mx-auto">
-                        I'm a junior software developer, with an interest in all things tech
+                        I'm an early-career software developer who's passionate about everything tech-related
                     </p>
                     <div>
                         <a href="#projects" className="custom-button">
